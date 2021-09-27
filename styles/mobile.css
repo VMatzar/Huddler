@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;400;600&display=swap');
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --grayfont: #78848E;
+    --bluefooter: #00252E;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 62.5%
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-image: url('../images/bg-hero-mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-width: 320px;
+}
+.huddle-title{
+    padding: 3rem 2rem;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.huddle-title .title__logo{
+    height: 2rem;
+}
+.huddle-title .title__tryfree{
+    height: 2.5rem;
+    width: 9.5rem;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 1px 6px 0 #20212447;
+    justify-self: end;
+    display: flex;
+}
+.huddle-title .title__tryfree a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    align-self:center;
+    color:black;
+}
+.huddle-text{
+    padding: 30px 35px; 
+    display:flex;
+    flex-flow:column;
+    text-align: center;
+    gap: 20px;
+
+}
+.huddle-text .text__title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    justify-self: center;
+    font-size: 2rem;
+}
+.huddle-text .text__content{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: 400;
+}
+
+
+
+
+.huddle-text .text__call-to-action{
+    height: 3.5rem;
+    width: 20rem;
+    background-color: var(--Pink);
+    border-radius: 50px;
+    display: flex;
+    margin: 0 auto;
+}
+.huddle-text .text__call-to-action a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    align-self:center;
+    color:white;
+}
+.huddle-text img{
+    padding-top: 20px;
+}
+
+
+.cards-container{
+    padding: 40px 20px;
+    min-width: 320px;
+}
+.card{
+    min-width: 250px;
+    max-width: 400px;
+    margin: 18px auto;
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-radius: 10px;
+    text-align: center;
+    display:flex;
+    flex-flow:column;
+    text-align: center;
+    gap: 22px;
+    padding: 40px 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+.card h4{
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-top: 20px;
+}
+.card p{
+    color: var(--grayfont);
+    font-size: 1.4rem;
+}
+
+footer{
+    background: var(--bluefooter);
+    padding: 26px 20px 26px 10px;
+    min-width: 320px;
+}
+.footer--contact img{
+    width: 180px;
+}
+
+
+
+
+.footer--contact article{
+    display:flex;
+    padding:10px 8px 10px 0;
+}
+.phone-icon{
+    background: url('../images/phone-call.svg');
+    width: 20px;
+    height: 20px;
+}
+.email-icon{
+    background: url('../images/email.svg');
+    width: 20px;
+    height: 20px;
+}
+.location-icon{
+    background: url('../images/locationfinal.svg');
+    width: 20px;
+    height: 20px;
+}
+.icon{
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer--contact .contact__location .padding-extra{
+    padding-left:20px;
+    color: white;
+}
+.footer-text:not(.padding-extra){
+    color: white;
+    padding-left:20px;
+}
+.footer-text{
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
