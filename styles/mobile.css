@@ -5,7 +5,6 @@
     --grayfont: #78848E;
     --bluefooter: #00252E;
 }
-
 *{
     box-sizing: border-box;
     margin:0;
@@ -23,6 +22,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    display:flex;
+    justify-content: center;
+}
+.header-container{
+    max-width: 1300px;
     min-width: 320px;
 }
 .huddle-title{
@@ -50,18 +54,22 @@ header{
     align-self:center;
     color:black;
 }
+.header-content{
+    display:flex;
+    flex-flow:column;
+}
 .huddle-text{
     padding: 30px 35px; 
     display:flex;
     flex-flow:column;
     text-align: center;
     gap: 20px;
-
+    height: auto;
+    justify-content: center;
 }
 .huddle-text .text__title{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    justify-self: center;
     font-size: 2rem;
 }
 .huddle-text .text__content{
@@ -70,10 +78,6 @@ header{
     color: black;
     font-weight: 400;
 }
-
-
-
-
 .huddle-text .text__call-to-action{
     height: 3.5rem;
     width: 20rem;
@@ -90,18 +94,18 @@ header{
     align-self:center;
     color:white;
 }
-.huddle-text img{
-    padding-top: 20px;
+.header-content img{
+    align-self: center;
+    padding: 30px 35px; 
+    max-width: 800px;
 }
-
-
 .cards-container{
     padding: 40px 20px;
     min-width: 320px;
 }
 .card{
     min-width: 250px;
-    max-width: 400px;
+    max-width: 500px;
     margin: 18px auto;
     box-shadow: 0 1px 6px 0 #20212447;
     border-radius: 10px;
@@ -113,22 +117,26 @@ header{
     padding: 40px 40px;
     font-family: 'Open Sans', sans-serif;
 }
-.card h4{
+.card .card--text h4{
     font-weight: 600;
     font-size: 1.7rem;
     margin-top: 20px;
 }
-.card p{
+.card .card--text p{
     color: var(--grayfont);
     font-size: 1.4rem;
 }
-
 footer{
     background: var(--bluefooter);
     padding: 125px 15px 25px 15px;
-    min-width: 320px;
     position: relative;
     margin-top: 40px;
+    display:flex;
+    justify-content: center;
+}
+.footer-container{
+    min-width: 320px;
+    max-width: 1440px;
 }
 .flex-container{
     display:flex;
@@ -200,7 +208,6 @@ footer{
     color: white;
     font-weight: 100;
 } 
-
 .footer--information{
     margin-top: 25px;
 }
