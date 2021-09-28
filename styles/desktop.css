@@ -1,0 +1,29 @@
+header{
+    background-image: url('../images/bg-hero-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-content{
+    display:flex;
+    flex-flow:row;
+}
+.card{
+    display:flex;
+    max-width: 1200px;
+    align-items: center;
+    text-align:start;
+    gap: 90px;
+}
+.card:not(:nth-child(2)){
+    flex-flow:row-reverse;
+}
+.card:nth-child(2){
+    flex-flow:row;
+}
+.card img{
+    width: 30%;
+}
+.card--text{
+    padding-left: 65px;
+}
