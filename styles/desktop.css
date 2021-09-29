@@ -7,6 +7,10 @@ header{
 .header-content{
     display:flex;
     flex-flow:row;
+    gap: 100px;
+}
+.huddle-text{
+    text-align: start;
 }
 .card{
     display:flex;
@@ -26,4 +30,13 @@ header{
 }
 .card--text{
     padding-left: 65px;
+}
+footer{
+    padding: 125px 70px 70px 100px;
+}
+.footer-grid-container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items:center;
+    align-items:center;
 }

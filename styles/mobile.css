@@ -45,6 +45,14 @@ header{
     box-shadow: 0 1px 6px 0 #20212447;
     justify-self: end;
     display: flex;
+    transition: all 1s ease-in-out;
+}
+.huddle-title .title__tryfree:hover{
+    transform:scale(1.2);
+    background-color: var(--Pink);
+}
+.huddle-title .title__tryfree:hover a{
+    color:white;
 }
 .huddle-title .title__tryfree a{
     font-family: 'Open Sans', sans-serif;
@@ -53,6 +61,7 @@ header{
     width: 100%;
     align-self:center;
     color:black;
+    transition: color 1s ease-out;
 }
 .header-content{
     display:flex;
@@ -85,6 +94,12 @@ header{
     border-radius: 50px;
     display: flex;
     margin: 0 auto;
+    cursor: pointer;
+    transition: transform 1.5s ease;
+}
+.huddle-text .text__call-to-action:hover{
+    transition: transform 800ms ease;
+    transform: scale(1.2);
 }
 .huddle-text .text__call-to-action a{
     font-family: 'Open Sans', sans-serif;
@@ -98,6 +113,7 @@ header{
     align-self: center;
     padding: 30px 35px; 
     max-width: 800px;
+    width: 100%;
 }
 .cards-container{
     padding: 40px 20px;
@@ -138,7 +154,7 @@ footer{
     min-width: 320px;
     max-width: 1440px;
 }
-.flex-container{
+.try-free--flex-container{
     display:flex;
     width: 100%;
     justify-content: center;
@@ -166,6 +182,12 @@ footer{
     border-radius: 50px;
     display: flex;
     margin: 25px auto 25px auto;
+    transition: transform 1.5s ease;
+    cursor: pointer;
+}
+.footer--tryfree .call-to-action:hover{
+    transition: transform 800ms ease;
+    transform: scale(1.2);
 }
 .footer--tryfree .call-to-action a{
     font-family: 'Open Sans', sans-serif;
@@ -174,6 +196,7 @@ footer{
     width: 100%;
     align-self:center;
     color:white;
+
 }
 .footer--contact img{
     width: 180px;
@@ -220,6 +243,10 @@ footer{
     font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
+    transition: color 1s linear;
+}
+.footer--information ul li a:hover, .footer--blog ul li a:hover{
+    color:var(--Pink);
 }
 .footer--social .social__media{
     padding-top: 20px;
@@ -228,9 +255,14 @@ footer{
     width: 100%;
     gap: 20px;
 }
-.fa-facebook:before, .fa-twitter:before, .fa-instagram:before{
+.fa-facebook, .fa-twitter, .fa-instagram{
     color: white;
     font-size: 2.5rem;
+    transition: color 1s linear;
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover{
+    color:var(--Pink);
+    cursor: pointer;
 }
 .footer--social .social__copyright{
     padding-top: 20px;
